@@ -1,0 +1,303 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+header {
+  height: 70px;
+  width: 100%;
+  background-color: rgba(13, 44, 74, 0.8);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 200px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.menu {
+  float: right;
+  line-height: 70px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+
+.show-menu-icon,
+.hide-menu-icon {
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  color: white;
+  padding: 21px 0;
+}
+
+.show-menu-icon {
+  float: right;
+}
+
+.show-menu-icon i {
+  line-height: 30px;
+  margin-right: 40px;
+}
+
+.menu a:hover,
+.show-menu-icon:hover,
+.hide-menu-icon:hover {
+  color: #3498db;
+}
+
+#chk {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+.bg-img {
+  position: relative;
+}
+
+/* Start of Page-One */
+.page-one {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #f7f7f7;
+  padding: 25px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.page-one h1 {
+  font-size: 80px;
+}
+
+.page-one p {
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+/* Start of Page-Two */
+.page-two {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading1 {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: white;
+  text-align: left;
+}
+
+.heading1 h1 {
+  background-color: rgb(44, 70, 112);
+  padding: 10px;
+  text-align: center;
+}
+
+.heading1 p {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: #5f5d60;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.heading2 {
+  padding-bottom: 30px;
+  color: white;
+  text-align: left;
+}
+
+.heading2 h1 {
+  background-color: rgb(44, 70, 112);
+  padding: 10px;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 30%;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+.heading h1 {
+  margin-top: 30px;
+  font-weight: normal;
+}
+
+.gjl-icon img {
+  margin-top: 30px;
+  width: 250px;
+  height: 250px;
+  float: left;
+}
+
+.gjl {
+  opacity: 0.6;
+  float: left;
+  width: 30%;
+}
+
+.gjl:hover {
+  opacity: 1;
+}
+
+.gjl p {
+  padding-left: 70px;
+}
+
+.tips {
+  opacity: 0.6;
+  float: left;
+  width: 25%;
+  flex-wrap: wrap;
+}
+
+.tips:hover {
+  opacity: 1;
+}
+
+.tips-icon {
+  position: relative;
+  width: 100%;
+  float: left;
+}
+
+.tips-icon img {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin: 25px 0px;
+  font-size: 15px;
+  color: #5f5d60;
+  float: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+footer img {
+  width: 150px;
+}
+
+footer p {
+  color: rgba(13, 44, 74, 0.8);
+  font-size: 12px;
+}
+
+footer ul img {
+  width: 30px;
+  padding: 0 15px;
+  float: right;
+  z-index: auto;
+}
+
+footer {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background-color: rgba(13, 44, 74, 0.8);
+}
+
+/* End of Page-Two */
+
+/* Ini punya nya Profile */
+.column {
+  float: left;
+  width: 15%;
+  margin-right: 2%;
+  margin-bottom: 16px;
+  margin-left: 2%;
+  padding: 0 8px;
+  display: block;
+}
+
+.main-page h2 {
+  border-bottom: 1px solid black;
+  margin: 5px;
+  padding: 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 5px;
+}
+
+.details {
+  padding: 0 25px;
+}
+
+.details p {
+  padding-bottom: 5px;
+}
+
+.details::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.button:hover {
+  background-color: #555;
+}
